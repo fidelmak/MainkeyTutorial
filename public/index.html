@@ -8,76 +8,86 @@
     <link rel="stylesheet" href="styles.css">
     
 </head>
-<body class="text-grey-600  font-body ">
+<body class="text-grey-600  font-body bg-red-800 bg-opacity-10 ">
     
     <div class="grid md:grid-cols-3"> <!--  content wrapper -->
-          <div class=" md:col-span-1">
-            <nav>
-                <div>
+        
+          <div class=" md:col-span-1 md:flex md:justify-end ">
+            <nav class="text-right "> 
+                <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 border-b border-red-100">
-                        <a href="#" class=""> food Ninja</a>
+                        <a href="#" class="hover:text-red-700">MainKey tutoria</a>
                     </h1>
+                    <div class="px-4 cursor-pointer md:hidden " id="burger">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                          </svg>
+                          
+
+                    </div>
                 </div>
-                <ul>
-                    <li class="text-gray-900 font-bold"> 
-                        <a href="#"> 
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-900 font-bold py-2"> 
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-primary"> 
                             <span>
                                 Home
                             </span>
-                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                               </svg>
                               
                         </a>
                     </li>
-                    <li> 
-                        <a href="#"> 
+                    <li class="py-2"> 
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white"> 
                             <span>
                                 About
                             </span>
-                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                               </svg>
                               
                         </a>
                     </li>
-                    <li> 
-                        <a href="#"> 
+                    <li class="py-2"> 
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white"> 
                             <span>
                                 Contact
                             </span>
-                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
                               </svg>
                               
                         </a>
                     </li>
                 </ul>
+                
             </nav>
         </div><!-- end nav-->
 
         <main class="px-16 py-6 bg-gray-100 md:col-span-2">
            <div class="flex justify-center md:justify-end ">
-            <a href="#" class=" btn text-primary border-primary md:border-2">login</a>
-            <a href="#"class="btn text-primary ml-2 border-primary md:border-2">sign-up</a>
+            <a href="#" class=" btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500 md:hover:opacity-30">login</a>
+            <a href="#"class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">sign-up</a>
            </div> 
            <header>
-            <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-            <h3 class="text-4xl font-semibold">for devs</h3>
+            <h2 class="text-gray-700 text-6xl font-semibold">Courses</h2>
+            <h3 class="text-4xl font-semibold">for Fullstack devs</h3>
            </header>
            <div>
-            <h4 class="font-bold mt-12 pb-2 border-b border-red-600">Latest Recipes</h4>
+            <h4 class="font-bold mt-12 pb-2 border-b border-red-600">Latest Courses</h4>
 
 
             <div class="mt-8 grid gap-10 lg:grid-cols-3">
                 <!--cards goes here -->
 
-                <div class="card">
+                <div class="card hover:shadow-lg transform hover:scale-110 transition ease-out duration-300">
                     <img src="img/img1.jpg" alt="img1" class="w-full h-32 sm:h-48 object-cover">
 
                     <div class="m-4">
-                        <span class="font-bold"> 5 Indomie service and egg</span>
-                        <span class="block text-gray-500 text-sm"> Recipe by fidelis</span>
+                        <span class="font-bold"> Introduction to HTML/CSS</span>
+                        <span class="block text-gray-500 text-sm"> Course by Fidelis</span>
+                        <span class="block text-sm text-right">$30</span>
                     </div>
 
                     <div class="badge">
@@ -90,12 +100,13 @@
                 </div>
 
 
-                <div class="card">
+                <div class="card hover:shadow-lg transform hover:scale-110 transition ease-out duration-300">
                     <img src="img/img2.jpg" alt="img1" class="w-full h-32 sm:h-48 object-cover">
 
                     <div class="m-4">
-                        <span class="font-bold"> 5 Indomie service and egg</span>
-                        <span class="block text-gray-500 text-sm"> Recipe by fidelis</span>
+                        <span class="font-bold"> Beginner to Expert Python</span>
+                        <span class="block text-gray-500 text-sm"> Course by Cythia</span>
+                        <span class="block text-sm text-right">$30</span>
                     </div>
 
                     <div class="badge">
@@ -107,12 +118,13 @@
                 </div>
 
 
-                <div class="card">
+                <div class="card hover:shadow-lg transform hover:scale-110 transition ease-out duration-300">
                     <img src="img/img3.jpg" alt="img1" class="w-full h-32 sm:h-48 object-cover">
 
                     <div class="m-4">
-                        <span class="font-bold"> 5 Indomie service and egg</span>
-                        <span class="block text-gray-500 text-sm"> Recipe by fidelis</span>
+                        <span class="font-bold">Eloquent Javascript Projects</span>
+                        <span class="block text-gray-500 text-sm"> Course by Raymon Donard</span>
+                        <span class="block text-sm text-right">$30</span>
                     </div>
 
                     <div class="badge">
@@ -131,15 +143,99 @@
             <h4 class="font-bold mt-12 pb-2 border-b border-red-600" >Most popular</h4>
 
 
-            <div class="mt-8">
+            <div class="mt-8 grid gap-10 lg:grid-cols-3">
                 <!-- cards goes here -->
+
+
+
+                <div class="card hover:shadow-lg transform hover:scale-110 transition ease-out duration-300">
+                    <img src="img/img1.jpg" alt="img1" class="w-full h-32 sm:h-48 object-cover">
+
+                    <div class="m-4">
+                        <span class="font-bold"> Introduction to PHP and Msql</span>
+                        <span class="block text-gray-500 text-sm"> Course by Brad Shaw</span>
+                        <span class="block text-sm text-right">$30</span>
+                    </div>
+
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          
+                        <span>25 mins</span>
+                    </div>
+                </div>
+
+
+                
+                <div class="card hover:shadow-lg transform hover:scale-110 transition ease-out duration-300">
+                    <img src="img/img1.jpg" alt="img1" class="w-full h-32 sm:h-48 object-cover">
+
+                    <div class="m-4">
+                        <span class="font-bold"> Introduction to Reactjs</span>
+                        <span class="block text-gray-500 text-sm"> Course by Femi Banks</span>
+                        <span class="block text-sm text-right">$30</span>
+                    </div>
+
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          
+                        <span>25 mins</span>
+                    </div>
+                </div>
+
+
+                <div class="card hover:shadow-lg transform hover:scale-110 transition ease-out duration-300">
+                    <img src="img/img1.jpg" alt="img1" class="w-full h-32 sm:h-48 object-cover">
+
+                    <div class="m-4">
+                        <span class="font-bold">Fullstack Web Development with Javascript</span>
+                        <span class="block text-gray-500 text-sm"> Course by Dennis</span>
+                        <span class="block text-sm text-right">$30</span>
+                    </div>
+
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          
+                        <span>25 mins</span>
+                    </div>
+                </div>
+
+
+
+
+
+
+
             </div>
 
-            <div class="flex justify-center">
-                <div class=" btn bg-secondary-100 text-secondary-200 ">Load more</div>
+            <div class="flex justify-center pt-6">
+                <div class=" btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125  hover:text-red-600 transition ease-out duration-300">Load more</div>
+            </div>
+           </div>
+
+
+           <h4 class="font-bold mt-12 pb-2 border-b border-red-600" >Be informed</h4>
+
+
+           <div class="mt-8 grid gap-10 lg:grid-cols-2">
+               <!-- cards goes here -->
+               <img src="img/img5.jpg" alt="img1" class="w-full h-40 sm:h-48 object-cover">
+            <div>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate eaque doloribus enim molestias! Ea officia labore, architecto explicabo minima incidunt in ullam error delectus earum sint dicta veritatis consectetur tenetur nostrum minus, nisi ipsa aspernatur? Minima consequuntur, voluptas id aut cum nihil, animi voluptatem cupiditate odio atque perspiciatis! Qui, sed.</span>
+                <div class=" btn mt-2 w-32 bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125  hover:text-red-600 transition ease-out duration-300">Load more</div>
+            </div>
+            <div>
+
             </div>
            </div>
         </main>
     </div>
+
+<script src="index.js"></script>
 </body>
 </html>
